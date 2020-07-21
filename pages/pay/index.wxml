@@ -1,0 +1,19 @@
+<view id="pay">
+  <view class="pay_box root_flex">
+    <view class="img_box">
+     <image src="../../images/{{data.PicUrl}}"></image>
+    </view>
+    <view class="name">{{data.Title}}</view>
+    <text class="money">￥ {{data.Price}}</text>
+  </view>
+  <view class="list">
+      <text class="list_name">数量</text>
+      <view class="list_operation root_flex">
+        <image class="move" src="../../images/move.png" bindtap="move"></image>
+        <view class="list_operation_num">{{ data.num }}</view>
+        <image class="add" src="../../images/add.png" bindtap="add"></image>
+      </view>
+    </view>
+    <button class="add_goods" bindtap="addCart">加入购物车</button>
+    <!-- <button class="pay" bindtap="goPay">立即购买</button> -->
+</view>

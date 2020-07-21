@@ -1,0 +1,45 @@
+<view id="my">
+  <view class="hedaer_my">
+    <view class="head_user">
+      <block wx:if="{{canIUse}}">
+        <view class="user_img root_flex">
+          <open-data type="userAvatarUrl" class="userAvatarUrl"></open-data>
+        </view>
+        <view class="user_info">
+          <open-data type="userNickName"></open-data>
+        </view>
+      </block>
+      <button wx:if="{{!canIUse}}" open-type="getUserInfo" bindgetuserinfo="bindGetUserInfo">授权登录</button>
+    </view>
+    <!-- <view class="head_user"></view> -->
+    <view class="footer_operation flex_box">
+      <view class="list_info root_flex overflow" wx:for="{{ headerList }}" wx:key="index" data-index="{{index}}" bindtap="tabClick">
+        <view class="list_content">
+          <text class="iconfont {{item.icon}}" style="color:#49bbec"></text>
+          <text class="name_list">{{ item.title }}</text>
+          <text class="tnumber">{{ item.Count }}</text>
+        </view>
+      </view>
+    </view>
+  </view>
+  <view id="main">
+    <view class="li" bindtap="address">
+      <view class="main_icon root_flex" >
+        <image src="../../images/addressbook.png" style="width: 40rpx; height: 40rpx"></image>
+      </view>
+      <view class="li_content">地址管理</view>
+    </view>
+    <view class="li" bindtap="partner">
+      <view class="main_icon root_flex" >
+        <image src="../../images/group_fill.png" style="width: 40rpx; height: 40rpx"></image>
+      </view>
+      <view class="li_content">成为合伙人</view>
+    </view>
+    <view class="li" wx:for="{{ myList }}" wx:key="index" bindtap="{{item.func}}">
+      <view class="main_icon root_flex">
+        <text class="iconfont {{item.icon}}" style="font-size: 20px"></text>
+      </view>
+      <view class="li_content">{{ item.title }}</view>
+    </view>
+  </view>
+</view>

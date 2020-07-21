@@ -1,0 +1,129 @@
+/* pages/my/opinion/opinion.wxss */
+
+.opinion {
+  padding: 29rpx 31rpx;
+}
+
+.textarea {
+  height: 283rpx;
+  font-size: 13px;
+  color: #888;
+  background-color: white;
+  padding: 26rpx 34rpx;
+  position: relative;
+}
+
+.textarea textarea {
+  width: 100%;
+  height: 100%;
+}
+
+.weui-textarea-counter {
+  position: absolute;
+  right: 25rpx;
+  bottom: 20rpx;
+  font-size: 14px;
+}
+
+.weui-cells {
+  margin: 29rpx 0 44rpx 0;
+  height: 88rpx;
+  border: 1px solid rgba(229, 229, 229, 1);
+  background: white;
+  padding: 0 37rpx;
+}
+
+.weui-cells input {
+  font-size: 13px;
+  color: #888;
+  border-radius: 5px;
+  height: 100%;
+}
+
+.btn {
+  margin-top: 60px;
+  background-color: #45b7e8;
+  font-weight: 400;
+  color: white;
+  width: 90% !important;
+}
+
+.up_images {
+  font-size: 13px;
+  color: #888;
+}
+
+.up_images .h3 {
+  margin-bottom: 32rpx;
+}
+
+.weui-uploader__file {
+  width: 204rpx;
+  height: 190rpx;
+  float: left;
+  margin-bottom: 25rpx;
+  position: relative;
+}
+
+.weui-uploader__file:nth-child(2), .weui-uploader__file:nth-child(5) {
+  margin-left: 24rpx;
+  margin-right: 24rpx;
+}
+
+.weui-uploader__file image {
+  width: 100%;
+  height: 100%;
+}
+
+.weui-uploader__input {
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+}
+
+.weui-uploader__input-box:after, .weui-uploader__input-box:before {
+  content: " ";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  background-color: #d9d9d9;
+}
+
+.weui-uploader__input-box {
+  background: white;
+  border: 1px solid rgba(181, 181, 181, 1);
+}
+
+.weui-uploader__input-box:before {
+  width: 2px;
+  height: 39.5px;
+}
+
+.weui-uploader__input-box:after {
+  width: 39.5px;
+  height: 2px;
+}
+
+.weui-uploader__file .del {
+  position: absolute;
+  width: 47rpx;
+  height: 47rpx;
+  background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEcAAABHCAYAAABVsFofAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyFpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNi1jMTQyIDc5LjE2MDkyNCwgMjAxNy8wNy8xMy0wMTowNjozOSAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENDIChXaW5kb3dzKSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDpFNUM4QkY0MjFBMTkxMUU5QkJCNUEwOTYyNzA5ODc1NCIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDpFNUM4QkY0MzFBMTkxMUU5QkJCNUEwOTYyNzA5ODc1NCI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOkU1QzhCRjQwMUExOTExRTlCQkI1QTA5NjI3MDk4NzU0IiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOkU1QzhCRjQxMUExOTExRTlCQkI1QTA5NjI3MDk4NzU0Ii8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+KYew9AAACDhJREFUeNrknAlQVWUUx8+9iKahk5OiA+67qZk15pLl1likiCBoYNqEkRsmGCJI5AYIKmGOqCiMmImKJkSiOaaSjqOJ5tbi0tTopFOgtqm5wP06593vjY9334MHd3nwODN/nXnz+O6d3zvf951zvkVgJ9zAQGuBGozqierG5YXy4GrCv/cv6jbqN9Ql1GXURdQx1E2jXlbQGQ41Pgw1GjUC1QclqmiPoc6jilCFqEOo8roGpwvqPdQUVCsd4ZegtqA2cO+q1XDIM2JQE7nXGGUSag8qAVVc2+C0Q61EBVKb4DyjbpePikBdU9uYqPLv3VHRqB9QQU4GA/z5/qifuAc3dJbndEVtQ70AtdfOoiagrhjpOeQlp2o5GLLn+HsGGwFH4INeLqoZ1A2j98xBJVe321enW9EXM1BToe5aNioMVaYlHDfuLQFQ9y2fhxoPtehW5IrpLgKGbBwPHN20gJOEmgauZTSDJartViGoreC6FsLDkWrD6YE6bZEpu6JR9t+fZ/4Odyt3Pv25MhiypqjtqEbVgTMH1Q/qh1GgGOtot/IGubDkAfXHHqB6o36uynNS6xqYuZ9IkJHH1DRB3Sqlqm7Vi+dNquzrYgY+ERLcu68/mKjVEqRtYzBjuQRZBaoA+fPB2S6cWLVljKLvGPjNk+CrEwzGfKAvoJh0CVJzZCAM/wtbJsGmPTUGRMFunD04nXhYXWM7cobB6LmPgRw+zWBctD6A4tZLkLKlIggCdLBYlff48lKMAg7VfBuoafl6KY5sVhnLgZMMAmIkuP9QOzALN0qQlK2EEDRSgM0LVTm+aJkNmGcr+vA6qrXaF99cyGBqogTlUsXPfQYJkL9chIbu6tpfnMlgUaak+Hz8cAG2J4jQQH3Vt4TP2GVmzEO1AEP29mgBNi4QQbCqnOw7LnvQw0c1bzsx2zYY/2EC5CzRBAyZJ2q4Zbfy03I8eGcMAopVAio8xmBCXM0A0fjy4XolGN8h6DFL1XuklflZwhml9YA5dawA66KVgL44wiA4XoJHZY63RTMSzUzW9sZgAXYt0xwM2WvmMacl72e6WPouBrNTJdNMYmmBI+Qxwq2K8XPVdgaRq5RgXh+IY9gKERq56/Xm4EWvNkjPIG1WoABpEUoP2nWIQUi8cuC2tNW5zBT9WtuoAQLsTtEVDNlAgtNH7yh2zkQBUt9XukjuQQZTFtsGtPZzBhFpSo8b2V+APATTuJH+CanI6za6W2SwACtmKwHl7GcQmlAR0IZ8BuErlWCG9hOgALtSkycMSdm60dt2NCpBjJokwLKZSkCf7mUQliSBhIAoP5qeogTzCoLZm2YYGLIONCBTmt7ZyCw6YROD+AxlXyLPOHqOmSBZ2pC+AuxbJYJHY0OT/asEhzYJNTe6zGAv0rW2wX1kMM2eNLwSckd0Vu1m4bsCxIdWvgA5oJfclZwAhsyDPIeBE41Sirwi5St4oi9fynWDp5o6793Icx456+EU6xQcsf3blPyJXS9LcubvZoJzxxkP3o3eEvJR5UEgRcdU6XOSmcac20Y/1V5+1byp7bxqfrpTAN0iOH8Y+UR7mXnvzgJcxDEmPEg5SC/HjDxuveGAfic4vxj1NHs1nWcwDD24RjQNwqvnijAjQAmIKn9UATTQfiU4F4140v4TDPyjlWB6tCcwbiYwpjIBckmfJ0KYnxLQkixmio8MsssE54LeT6E6sv98CR5YgenWDsGku0Hrpyt+ToAyYkQI9VUCosAxMdsQQOd0r+ccOsXAN0q5AtGlDUDROjfwbmn/bymNoHp0dqESRvIsEeZP1nXzqjd5TinIW1M1t2/O2AbT2Rvg8NrKwZjiDHy7zDgRJvsoIViuWelglG/eMKfIB7Ru/ejZimtYZuvohd6EXamNp2PtUKVwU7wIwaOUgCgGolhIjyHSHASaQg8tWz52XgZz97+Kn7dvLYNpV811DgK0ZZEIE0YqAVGlkCqGWodiprGPr1vRP3R8R/XyzPELDHwiJfjbKu5u2wrHGOxKnbxr3nZZOZiCR0o7rAfwNVEizByvyRikWLeiYzmb1bZa/KNtMNSFyGPUgCGjdamti0UIGFYRAhXGqHJIFUQN7DPgW3Ety3KZ4OD+XHsWu44pwHi1kMHQ7KSF0TLMtqUijH1ZCYgqiCo2EpgmSJD3WoM1HBqhd6jKspNEeL7745em+IXAdG2r7YBAgHbis2jdytKo6K7yR/gSLM5tWe/sov0550HFNpTb/wC8Gi7B9VJmimN6dtAvEKFo27zdhWrLVBijUmsNjVxuIOqkPThktIFQ1VaUm39h8ITSE4zZaPcGDdLhgYJp2UaF5YHVRnRbcNrwoLC+7Qmk9bsr1sUua6MpfQnUL0sGG2ey7G3SpoXWb6F+bLc9y8eaB4r0xc4fUP48CXXPxcHQDvY3bYGBKmYlGnemuTic6WBna39VcMzRYrKLgqH91jmVfcGRw2gCjxrDXAjMTpDPfVZ6m4EjwR4FRzNQu10EDGXcb4ED1zw4GglTQ3SAK6uOg8kG+WIAhzb+VidNKOddK7GOgqGzDaHVSa5reug+iGfxdeH49B0+K1X7xKHaGwl21PJA0Sk3EgB/IEWWMeCk9fZKjILXBagBNQWj1nMsjW5B+Zhntc6+7IOy60jUVbUNiRq90DU+C/QF+bRtucFAqIJXgHqR/0BXtWhUz5uXKPWgm5c8dYRSwqN4ClJr/c1L1kaN0yGLMSDf3fWsym5HAen3IN/VRXd2HQaVdW9nwrE2uu3tJZD3PnfnouUg2plDO//MR7Xvom6hbvAE2PK2t1KjXvZ/AQYAJ0yxvK8XyTkAAAAASUVORK5CYII=) no-repeat center;
+  border-radius: 50%;
+  right: -8rpx;
+  top: -8rpx;
+  background-size: 100% 100%;
+  z-index: 1111;
+}
+
+.overflow {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}

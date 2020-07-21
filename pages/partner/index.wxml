@@ -1,0 +1,22 @@
+<view id='partner'>
+  <view class='ba_text'>
+    （成为合伙人申请）
+  </view>
+  <view class='partner_input'>
+    <view class='h2'>填写申请信息</view>
+    <block wx:for="{{input}}" wx:key="*this" daya-input="{{index}}">
+      <view class="weui-cells">
+        <view class="weui-cell">
+          <view class="weui-cell__hd">
+            <view class="weui-label">{{item.title}}</view>
+          </view>
+          <view class="weui-cell__bd">
+            <input class="weui-input" placeholder="{{item.placeholder}}" value="{{item.value}}" bindinput="inputValue" data-input="{{index}}" type="{{item.type}}" maxlength="{{item.max}}"/>
+          </view>
+          <view wx:if="{{item.func}}" bindtap='{{item.func}}' class='func'>{{timeTitle}}</view>
+        </view>
+      </view>
+    </block>
+    <button class='btn' bindtap="upLoad">立即提交</button>
+  </view>
+</view>

@@ -1,0 +1,9 @@
+<view id="set">
+  <view wx:for="{{setList}}" wx:key="index" class="li" bindtap="{{item.func}}">
+    <text class="title">{{ item.title }}</text>
+    <view class="left_con">
+      <text class="tip" wx:if="{{item.tip}}">{{ item.text }}</text>
+      <text class="icon" wx:if="{{item.icon}}"></text>
+    </view>
+  </view>
+</view>

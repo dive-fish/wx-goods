@@ -1,0 +1,34 @@
+#set .li {
+  padding: 0 42rpx;
+  height: 100rpx;
+  border: 1px solid rgba(229, 229, 229, 1);
+  background-color: white;
+  font-size: 14px;
+  color: #444;
+  line-height: 100rpx;
+  overflow: hidden;
+}
+
+.left_con {
+  float: right;
+  position: relative;
+  height: 100%;
+}
+
+.icon {
+  content: "";
+  position: absolute;
+  right: 0px;
+  top: 50%;
+  margin-top: -5px;
+  width: 10px;
+  height: 10px;
+  border-right: 0.01rem solid #888;
+  border-bottom: 0.01rem solid #888;
+  transform: rotate(-45deg);
+}
+
+.tip {
+  color: #888;
+  font-size: 15px;
+}

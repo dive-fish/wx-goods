@@ -1,0 +1,27 @@
+<view id='address'>
+	<block wx:for="{{address}}" wx:key="*this">
+		<view class='addressLi'>
+			<view class='user_info'>
+				<view class='user_name_phone'>
+					<view class='name'>{{ item.name}}</view>
+					<view class='phone'>{{ item.phone }}</view>
+					<view class='state' wx:if="{{item.default}}">默认</view>
+				</view>
+				<view class='address_info'>{{ item.address}}-{{item.content}}</view>
+			</view>
+			<view class='select'>
+				<view class="checkbox-group" bindtap="bindAgreeChange" data-index="{{index}}">
+					<view class="weui-agree__checkbox-icon">
+						<icon class="icon-box-img" type="success" color="#0aa8f1" size="24" wx:if="{{item.default}}"></icon>
+					</view>
+					默认地址
+				</view>
+				<view class='select_operation'>
+					<view class='edit' bindtap='navedit' data-index="{{index}}" data-state="1">编辑</view>
+					<view class='remove' bindtap="removeAddress" data-index="{{index}}">删除</view>
+				</view>
+			</view>
+		</view>
+	</block>
+	<button class='btn' bindtap='navedit' data-index="-1" data-state="-1">添加新收货人</button>
+</view>

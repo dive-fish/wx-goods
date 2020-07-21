@@ -1,0 +1,85 @@
+/* pages/my/partner/partner.wxss */
+
+
+.ba_text {
+  background: white;
+  height: 357rpx;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  flex-direction: column;
+  text-align: center;
+  font-size: 17px;
+  color: #222;
+}
+
+.partner_input {
+  color: #444;
+  font-size: 14px;
+}
+
+.partner_input .h2 {
+  height: 87rpx;
+  line-height: 87rpx;
+  padding: 0 36rpx;
+}
+
+.weui-cells {
+  border-bottom: 1px solid rgba(229, 229, 229, 1);
+  width: 100%;
+  height: 98rpx;
+  background: white;
+  position: relative;
+  overflow: hidden;
+}
+
+.weui-cell {
+  padding: 0 38rpx;
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+  height: 100%;
+  font-size: 14px;
+  color: #444;
+}
+
+.weui-label {
+  width: 146rpx;
+  word-wrap: break-word;
+  word-break: break-all;
+  height: 100%;
+}
+
+.weui-input {
+  text-align: left;
+  color: #888;
+  height: 100%;
+}
+
+.func {
+  position: absolute;
+  color: #0aa8f1;
+  font-size: 14px;
+  right: 44rpx;
+  z-index: 999;
+}
+
+.btn {
+  width: 100% !important;
+  height: 98rpx;
+  background: #0aa8f1;
+  color: white;
+  padding: 0;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  z-index: 11008;
+  font-size: 17px;
+  border-radius: 0;
+  line-height: 98rpx;
+}

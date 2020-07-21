@@ -1,0 +1,24 @@
+<view class='opinion'>
+  <view class='textarea'>
+    <textarea class="weui-textarea" placeholder="请输入反馈内容..." bindinput="inputAction" value='{{textarea}}' />
+    <view class="weui-textarea-counter">{{textarea.length}}/100</view>
+  </view>
+  <view class="weui-cells weui-cells_after-title">
+    <input class="weui-input" placeholder="请输入联系电话" type="number" bindinput="bindKeyInput" maxlength="11" value='{{value}}'/>
+  </view>
+  <view class='up_images'>
+    <view class='h3'>上传照片（最多6张）</view>
+    <view class='images_list'>
+      <block wx:for="{{files}}" wx:key="*this">
+        <view class="weui-uploader__file" data-index="{{index}}">
+          <image class="weui-uploader__img" src="{{item}}" mode="aspectFill" />
+          <view class='del' bindtap='delimage' data-index="{{index}}"></view>
+        </view>
+      </block>
+      <view class="weui-uploader__file weui-uploader__input-box" bindtap="previewImage" wx:if="{{files.length < 6}}">
+          <view class="weui-uploader__input " bindtap="chooseImage"></view>
+        </view> 
+    </view>
+  </view>
+  <button class='btn' bindtap="upLoad">提交</button>
+</view>

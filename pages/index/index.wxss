@@ -1,0 +1,121 @@
+.container {
+  background-color: #f2fbff;
+  height: 100%;
+}
+
+#banner {
+  width: 100%;
+  overflow: hidden;
+  height: 294rpx;
+  position: relative;
+  background-color: white;
+}
+
+.swiper-container, .swiper-item {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-container image {
+  width: 100%;
+  height: 100%;
+}
+
+.main {
+  padding: 0 24rpx;
+  padding-bottom: 55rpx;
+}
+
+.main_title {
+  color: #777;
+  font-size: 12px;
+  height: 100rpx;
+  line-height: 130rpx;
+  padding-left: 44rpx;
+  background-color: white;
+}
+
+.li {
+  position: relative;
+  width: 215rpx;
+  height: 230rpx;
+  margin: 10rpx;
+  background-color: white;
+  display: inline-block;
+  margin-bottom: 26rpx;
+  box-shadow: 0px 0px 1px 0px rgba(58, 194, 254, 0.21);
+}
+
+.li_box {
+  position: relative;
+  width: 100%;
+  height: 65%;
+}
+
+.images_box {
+  width: 100%;
+  height: 100%;
+  display: block;
+  overflow: hidden;
+}
+
+.li .PicUrl {
+  max-width: 100%;
+  max-height: 100%;
+  position: relative;
+  margin-top: 10px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.yishouqin {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 50%;
+  height: 50%;
+  z-index: 2;
+}
+
+.i {
+  display: block;
+  position: absolute;
+  top: -0.1px;
+  right: -0.1px;
+  z-index: 10;
+  width: 60rpx;
+  height: 60rpx;
+  background-size: 100%;
+}
+
+.goods_info {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  align-items: center;
+  color: #444;
+  height: 35%;
+  overflow: hidden;
+  font-size: 22rpx;
+  padding-top: 5rpx;
+}
+
+.goods_money {
+  color: #fcaa2e;
+  font-size: 13px;
+}
+
+.beianhao {
+  text-align: center;
+  font-size: 10px;
+  color: #929296;
+}
+
+.goods_name {
+  width: 100%;
+  text-align: center;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}

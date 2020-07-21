@@ -1,0 +1,46 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/my/index",
+    "pages/cart/index",
+    "pages/set/index",
+    "pages/payList/index",
+    "pages/partner/index",
+    "pages/pay/index",
+    "pages/opinion/index",
+    "pages/address/index",
+    "pages/edit/index"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "模拟商城",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "color": "#A2A2A2",
+    "selectedColor": "#4F9EFB",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "主页",
+        "iconPath": "./images/home.png",
+        "selectedIconPath": "./images/home_action.png"
+      },
+      {
+        "pagePath": "pages/cart/index",
+        "text": "购物车",
+        "iconPath": "./images/cart.png",
+        "selectedIconPath": "./images/cart_action.png"
+      },
+      {
+        "pagePath": "pages/my/index",
+        "text": "我的",
+        "iconPath": "./images/my.png",
+        "selectedIconPath": "./images/my_action.png"
+      }
+    ]
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}

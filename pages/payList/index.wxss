@@ -1,0 +1,165 @@
+#mylist .state {
+  position: absolute;
+  right: 13px;
+  color: #d80000;
+}
+
+
+#details .this {
+  background-color: #0aa8f1;
+  color: white !important;
+}
+
+.weui-navbar {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  background-color: white;
+  width: 100%;
+  height: 84rpx;
+  position: fixed;
+  top: 0;
+  z-index: 1231313;
+}
+
+.weui-navbar__item {
+  position: relative;
+  display: block;
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+  flex: 1;
+  padding: 26rpx 0;
+  text-align: center;
+  font-size: 0;
+  color: #888;
+}
+
+.weui-navbar__item.active {
+  color: #0aa8f1;
+}
+
+.weui-navbar__title {
+  display: inline-block;
+  font-size: 15px;
+  max-width: 8em;
+  width: auto;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  word-wrap: normal;
+}
+
+.weui-navbar__slider {
+  position: absolute;
+  content: " ";
+  left: 0;
+  bottom: 0;
+  width: 150rpx;
+  height: 4rpx;
+  background-color: #0aa8f1;
+  -webkit-transition: -webkit-transform 0.3s;
+  transition: -webkit-transform 0.3s;
+  transition: transform 0.3s, -webkit-transform 0.3s;
+}
+
+#mylist {
+  padding-top: 46px;
+}
+
+#mylist .number {
+  position: absolute;
+  right: 26rpx;
+  top: 32rpx;
+  color: #000;
+  font-size: 36rpx;
+}
+
+.main {
+  font-size: 13px;
+  overflow: hidden;
+  color: #888;
+  margin-bottom: 28rpx;
+  width: 100%;
+  flex-direction: row;
+  white-space: nowrap;
+}
+
+#hailist .state {
+  position: absolute;
+  right: 26rpx;
+  color: #d80000;
+}
+
+#details {
+  border-bottom: 0;
+  border-top: 1px solid #e5e5e5;
+}
+
+#details .btn {
+  color: #666;
+  font-size: 13px;
+  width: 155rpx;
+  height: 52rpx;
+  border: 1px solid rgba(0, 0, 0, 0.6);
+  border-radius: 5px;
+  line-height: 52rpx;
+  padding: 0;
+  text-align: center;
+}
+
+.box_btn {
+  position: absolute;
+  right: 25rpx;
+}
+
+.main_head {
+  padding: 0 26rpx;
+  display: flex;
+  align-items: center;
+  height: 88rpx;
+  position: relative;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.main_content {
+  height: 201rpx;
+  padding: 0 26rpx;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.main_content image {
+  width: 160rpx;
+  height: 160rpx;
+}
+
+#hailist .number {
+  position: absolute;
+  top: 26rpx;
+  right: 32rpx;
+  color: #000000;
+  font-size: 36rpx;
+}
+
+.info {
+  margin-left: 38rpx;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.info .name {
+  color: #444444;
+  font-size: 30rpx;
+}
+
+#hailist #details .order {
+  font-size: 12px;
+}
+
+.box {
+  background-color: white;
+  margin-bottom: 20rpx;
+}

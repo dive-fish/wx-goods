@@ -1,0 +1,38 @@
+<view id="cart">
+	<block wx:if="{{data.length > 0}}">
+		<view class='main_head'>
+			<view class='order'>商品信息</view>
+		</view>
+		<view class='goosinfo'>
+			<view class='main'>
+				<view class='main_content' wx:for="{{data}}" wx:key="*this">
+					<view class="icon-checkbox">
+						<icon class="icon-small" type="circle" size="24" wx:if="{{!item.isAgree}}" bindtap="bindAgreeChange" data-index="{{index}}"></icon>
+						<icon class="icon-box-img" data-index="{{index}}" type="success" color="#0aa8f1" size="24" wx:else bindtap="bindAgreeChange"></icon>
+					</view>
+					<image src="../../images/{{item.PicUrl}}"></image>
+					<view class='info'>
+						<view class="name">{{item.Title}}</view>
+						<text class="money">￥ {{item.Price}}</text>
+					</view>
+					<view class="list">
+						<view class="list_operation root_flex">
+							<image class="move" src="../../images/move.png" bindtap="move" data-index="{{index}}"></image>
+							<view class="list_operation_num">{{item.num }}</view>
+							<image class="add" src="../../images/add.png" bindtap="add" data-index="{{index}}"></image>
+						</view>
+					</view>
+				</view>
+			</view>
+		</view>
+		<view class='footer'>
+			<view class='pay_money overflow'>￥ {{Price}}</view>
+			<view class='operation_btn flex_box'>
+				<button class='black f1' bindtap="toast">提交订单</button>
+			</view>
+		</view>
+	</block>
+	<view wx:else class="no_goods">
+		你的购物车空空如也
+	</view>
+</view>

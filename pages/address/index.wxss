@@ -1,0 +1,102 @@
+/* pages/my/address/address.wxss */
+
+.addressLi {
+  background-color: white;
+  height: 239rpx;
+  padding: 0 37rpx;
+  margin-bottom: 21rpx;
+}
+.user_info {
+  height: 167rpx;
+  font-size: 14px;
+  color: black;
+  border-bottom: 1px solid #e5e5e5;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.phone {
+  margin: 0 28rpx 0 15rpx;
+}
+
+.user_name_phone, .select {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+  overflow: hidden;
+  position: relative;
+}
+
+.address_info {
+  font-size: 13px;
+}
+
+.state {
+  width: 89rpx;
+  height: 41rpx;
+  border-radius: 5px;
+  background-size: 100% 100%;
+  color:white;
+  font-size: 22rpx;
+  background:#0aa8f1;
+  text-align: center;
+  line-height: 41rpx;
+}
+
+.btn {
+  width: 100% !important;
+  height: 97rpx;
+  line-height: 97rpx;
+  background: #0aa8f1;
+  padding: 0;
+  color: white;
+  font-size: 17px;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  border: 0;
+  border-radius: 0;
+}
+
+.select {
+  font-size: 12px;
+  color: black;
+  height: 73rpx;
+}
+
+.select_operation {
+  position: absolute;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: fow;
+}
+
+.edit {
+  margin-right: 15px;
+}
+
+.weui-agree__checkbox-icon {
+  position: relative;
+  top: 4rpx;
+  display: inline-block;
+  border: 1px solid #d1d1d1;
+  background-color: #fff;
+  border-radius: 50%;
+  width: 34rpx;
+  height: 34rpx;
+  margin-right: 5px;
+}
+.weui-agree__checkbox-icon icon {
+  position: absolute;
+  top: -3px;
+  left: -3px;
+  width: 32rpx;
+  height: 32rpx;
+}

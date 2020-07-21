@@ -1,0 +1,32 @@
+<!--index.wxml-->
+<view class="container">
+  <swiper id="banner" indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+    <block wx:for="{{ swiper }}" wx:key="*this">
+      <swiper-item class="swiper-container">
+        <view class="swiper-item {{item}}">
+         <image src="{{item}}"></image>
+        </view>
+      </swiper-item>
+    </block>
+  </swiper>
+  <view class="main_title" bindtap="address">地址: {{ addressInfo.address }}</view>
+  <view class="main">
+    <view class="content" wx:if="{{goodsList.length > 0}}">
+      <view class="li" wx:for="{{ goodsList }}" wx:key="*this" data-index="{{index}}" data-data="{{item}}" bindtap="getPay">
+        <image class="i" src="../../images/mian.png" wx:if="{{item.HasFreeAct}}"></image>
+        <view class="li_box">
+          <view class="images_box">
+            <image class="PicUrl" src="../../images/{{item.PicUrl}}"></image>
+          </view>
+          <!-- 已售罄图标 -->
+          <image class="yishouqin" wx:if="{{item.SaleStock < 1 || item.IsFault == 2}}" src="../../images/min.png"></image>
+          <!--  -->
+        </view>
+        <view class="goods_info">
+          <span class="goods_name">{{ item.Title }}</span>
+          <span class="goods_money">￥{{ item.Price }}</span>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

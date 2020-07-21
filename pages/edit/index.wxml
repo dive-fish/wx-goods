@@ -1,0 +1,30 @@
+<view id='edit'>
+  <block wx:for='{{ modify }}' wx:key='*this'>
+    <view class="weui-cells">
+      <view class="weui-cell">
+        <view class="weui-cell__hd">
+          <view class="weui-label">{{item.title}}</view>
+        </view>
+        <view class="weui-cell__bd">
+          <picker mode="region" bindchange="bindRegionChange" value="{{region}}" wx:if="{{item.type === 'select'}}" wx:key='{{index}}'>
+            <text class='picker_text'>{{item.value}}</text>
+            <text class='right'></text>
+          </picker>
+          <input wx:key='{{index}}' bindinput="inputAddress" type="{{item.type}}" maxlength="{{item.max}}" class="weui-input" placeholder="{{item.placeholder}}" value="{{item.value}}" wx:else data-index="{{index}}" />
+        </view>
+      </view>
+    </view>
+  </block>
+  <checkbox-group bindchange="bindAgreeChange">
+    <label class="weui-agree" for="weuiAgree">
+      <view class="weui-agree__text">
+        <checkbox class="weui-agree__checkbox" id="weuiAgree" value="agree" checked="{{isAgree}}" />
+        <view class="weui-agree__checkbox-icon">
+          	<icon class="icon-box-img" type="success" color="#0aa8f1" size="24"  wx:if="{{isAgree}}"></icon>
+        </view>
+        设为默认收货地址
+      </view>
+    </label>
+  </checkbox-group>
+  <button class='btn' bindtap="btn">{{btnTitle}}</button>
+</view>

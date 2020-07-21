@@ -1,0 +1,33 @@
+<view id='mylist'>
+  <view class="weui-navbar">
+    <block wx:for="{{tabs}}" wx:key="*this">
+      <view id="{{index}}" class="weui-navbar__item {{activeIndex == index ? 'active' : ''}}" bindtap="tabClick" data-index="{{index}}">
+        <view class="weui-navbar__title">{{item.title}}</view>
+      </view>
+    </block>
+    <view class="weui-navbar__slider" style="left: {{sliderLeft}}px; transform: translateX({{sliderOffset}}px); -webkit-transfoviewrm: translateX({{sliderOffset}}px);"></view>
+  </view>
+  <view class='main'>
+    <view wx:for="{{goodsList}}" data-id="{{item.id}}" wx:key="index" class="box">
+      <view class='main_head'>
+        <view class='order'>订单编号：{{item.order}}</view>
+        <view class='state'>{{ tabs[item.palyState].title }}</view>
+      </view>
+      <view class='main_content'>
+        <image src='../../images/{{item.PicUrl}}'></image>
+        <view class='info'>
+          <text class='name'>{{item.Title}}</text>
+          <text class='money'>{{item.Price}}</text>
+        </view>
+        <view class='number'>x{{item.num}}</view>
+      </view>
+      <view class='main_head' id='details'>
+        <view class='order'>总价: {{item.toast}}</view>
+        <view class="box_btn">
+          <button data-index="{{index}}" bindtap="noPaly" class='btn position' hover-class='none' wx:if="{{item.palyState !== 3 || item.palyState !== 4}}">取消订单</button>
+        <button data-index="{{index}}" bindtap="goPlay" class='this btn' hover-class='none' wx:if="{{item.palyState === 1}}">立即付款</button>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

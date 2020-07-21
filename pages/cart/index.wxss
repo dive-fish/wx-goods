@@ -1,0 +1,126 @@
+/* pages/cart/index.wxss */
+.goosinfo {
+  margin-bottom: 29rpx;
+}
+
+.main {
+  background-color: white;
+  font-size: 13px;
+  overflow: hidden;
+  color: #888;
+  margin-bottom: 28rpx;
+}
+
+.main_head {
+  font-size: 13px;
+  overflow: hidden;
+  color: #888;
+  padding: 0 26rpx;
+  display: flex;
+  align-items: center;
+  position: relative;
+  height: 67rpx
+}
+
+.main_content {
+  height: 201rpx;
+  padding: 0 26rpx;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.main_content image {
+  width: 160rpx;
+  height: 160rpx;
+}
+
+.info {
+  margin-left: 38rpx;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.info .name{
+  color: #444444;
+  font-size: 30rpx;
+}
+
+.list {
+  height: 100%;
+  padding: 0 30rpx;
+  color: #444;
+  font-size: 14px;
+  background-color: white;
+  overflow: hidden;
+  text-align: left;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.list_operation{
+  height: 100%;
+  float: right;
+  flex-direction: row;
+}
+.list_operation image {
+  width: 48rpx;
+  height: 48rpx;
+  overflow: hidden;
+  border-radius: 50%;
+}
+.list_operation_num{
+  padding: 0 40rpx;
+}
+
+.footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  z-index: 99;
+  background-color: white;
+  padding-left: 28rpx;
+  overflow: hidden;
+  width: calc(100% - 28rpx);
+  height: 98rpx;
+}
+
+.footer .pay_money {
+  width: 42%;
+  height: 100%;
+  float: left;
+  flex-direction: row;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  font-size: 16px;
+  color: #0aa8f1;
+}
+
+.operation_btn {
+  width: 50%;
+  float: right;
+  height: 100%;
+}
+
+.operation_btn button{
+  background-color: #0aa8f1;
+  color: white;
+  border-radius: 0;
+  padding: 0;
+  line-height: 98rpx;
+  font-weight: 400;
+}
+
+.no_goods{
+  color: crimson;
+  font-size: 18px;
+  text-align: center;
+  width: 100%;
+  padding-top: 20px;
+}
+.icon-checkbox{
+  margin-right: 10px;
+}
